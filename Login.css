@@ -1,0 +1,136 @@
+/* Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: url('https://wallpaperaccess.com/full/4722382.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.5;
+}
+
+
+/* Navbar Styles (Optional) */
+.navbar {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding: 1rem;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: -1;
+}
+
+.navbar .navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar .logo {
+    margin-right: auto;
+}
+
+.navbar .logo img {
+    width: 160px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul h1 {
+    color: #0dc8a3;
+    font-size: 24px;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin-left: 80px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #0dc8a3;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Login Page Styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* z-index: -1; */
+}
+
+.login-box {
+    background-color: rgba(255, 255, 255, 0.642);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-box h2 {
+    color: #ef125f;
+    margin-bottom: 1rem;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box label {
+    margin-bottom: 0.5rem;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.login-box button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color:  #ef125f;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-box button:hover {
+    background-color:#ef125f;
+}
+
+.login-box p a {
+    color: #ef125f;
+    text-decoration: none;
+}
+
+.login-box p a:hover {
+    text-decoration: underline;
+}

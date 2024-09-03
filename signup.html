@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - EnerGize</title>
+    <link rel="stylesheet" href="signup.css"> 
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Signin to EnerGize</h2>
+            <form action="process_login.php" method="post">
+                <label for="username">Enter Email/ Mobile no.:</label>
+                <input type="text" id="username" name="username" required>
+             
+                <label for="password"> Create a Password:</label>
+                <input type="password" id="password" name="password" required>
+                <label for="Confirm password"> Confirm Password:</label>
+                <input type="password" id="confirm" name=" Confirm password" required>
+                
+                <button type="submit"><a href="index.html" id="signin">Sign in</a></button>
+            </form>
+            <!-- <p>Don't have an account? <a href="signup.html">Sign up here</a></p> -->
+        </div>
+    </div>
+</body>
+</html>

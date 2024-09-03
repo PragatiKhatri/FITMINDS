@@ -1,0 +1,169 @@
+/* basic  Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+h1{
+    
+    text-shadow: #000000;
+    outline: #2d2b2b;
+  background: -moz-radial-gradient(red,pink,orange,yellow);
+}
+body {
+   
+    background: url('https://wallpapercave.com/wp/wp2482799.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    line-height: 1.5;
+}
+/* .video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    border: 0;
+    object-fit: cover; /* Ensures the video covers the entire background */
+
+
+
+/*  blur background */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 100;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 11, 11, 0.5); /* Black overlay with transparency */
+    z-index: -1; /* Ensure it stays behind all other content */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent navbar */
+    color: #fff;
+    padding: 1rem;
+    backdrop-filter: blur(10px); /* Adds a blur effect to the navbar background */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .navdiv {
+    display: flex;
+    align-items: center;
+   
+    justify-content: space-evenly; 
+}
+
+.navbar .logo {
+   
+    margin-right: auto;
+}
+
+.navbar .logo img {
+    width: 160px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul h1 {
+    color: #0dc8a3;
+    font-size: 24px;
+    
+    margin: 0;
+}
+
+.navbar ul li {
+    margin-left: 80px; 
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.navbar ul li a:hover {
+    background-color: #0dc8a3; 
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Main Content Styles */
+main {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+main div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+main div:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); 
+}
+
+main div h3 {
+    color: #0dc8a3;
+    margin-bottom: 1rem;
+}
+
+main div p {
+    color: #2d2b2b;
+    font-size: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .navbar .navdiv {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .navbar ul h1,
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .navbar ul li a {
+        padding: 10px; 
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
